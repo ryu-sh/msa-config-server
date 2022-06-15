@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false
+        git:
+          uri: https://github.com/ryu-sh/msa-config.git
+          search-paths: baseservice
+          username: ryu-sh
+          password: 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
